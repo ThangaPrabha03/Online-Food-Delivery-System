@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Food Delivery Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://as2.ftcdn.net/v2/jpg/07/04/02/15/1000_F_704021514_hts6dCnnpWK2XQUFI937Vh4J9DTPFQ3A.jpg'); /* Add your background image URL here */
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: rgba(51, 51, 51, 0.8); /* semi-transparent background */
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: rgba(242, 242, 242, 0.9); /* semi-transparent background */
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .contact-container {
+      text-align: center;
+    }
+
+    .contact-container form {
+      margin-top: 20px;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.9); /* semi-transparent background for readability */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px; /* Reduced form width */
+      margin: auto; /* Center the form */
+    }
+    .contact-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-container input:focus,
+    .contact-container textarea:focus {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .contact-container button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .contact-container button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Food Delivery Shop</h1>
+  </header>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container contact-container">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us for any inquiries or feedback.</p>
+    <form id="contactForm" onsubmit="return submitForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    function submitForm() {
+      // Simulate form submission (you can replace this with actual form submission logic)
+      document.getElementById("contactForm").reset();
+      alert("Feedback successfully submitted!");
+      return false; // Prevent form from actually submitting
+    }
+  </script>
+
+</body>
+</html>
